@@ -1,7 +1,7 @@
 // TODO: animation across the screen
 //       wrap around
 //       bounce
-let x;
+//let x;
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background(20);
@@ -12,8 +12,9 @@ function setup() {
 function draw() {
   background(20);
   //draw stuff
-  ellipse((5*frameCount % width), height / 2, 100);
-
+  let xpos = 10 * frameCount;
+  ellipse(xpos % width, height / 2, 100);
+//ellipse(x % width);
   //update some parameter
   //x = x + 8;
 
